@@ -32,7 +32,7 @@ make stop
 ```
 
 ### Core function Explanation:
-1. `Directory Creation`: The `create_directory` function ensures that necessary directories exist or are created. Here, in this 
+1. `Directory Creation`: The `create_directory` function ensures that necessary directories exist or are created. Here, we are creating `temp`, `local` and `trash` folder.
 
 2. `Downloading Files from FTP`:
 The `download_xml_files_and_store_in_temp_folder` function connects to the FTP server, downloads files to the `TEMP_FOLDER`, and then moves them to the `LOCAL_FOLDER`.
