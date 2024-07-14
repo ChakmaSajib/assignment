@@ -2,7 +2,7 @@
 
 ### Step 1: Create Virtual Environment
 
-Create a virtual environment inside `nybsys` folder to avoid conflicts with system-wide Python installations:
+Create a virtual environment inside folder to avoid conflicts with system-wide Python installations:
 ```bash
 virtualenv venv
 ```
