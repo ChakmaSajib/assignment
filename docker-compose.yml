@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  ftp-basestation:
+    image: fauria/vsftpd
+    container_name: ftp-server
+    environment:
+      FTP_USER: nybsys
+      FTP_PASS: 12345
+    ports:
+      - "20:20" # for host
+      - "21:21" # used for FTP command control
+      - "21100-21110:21100-21110" # used for passive mode data transfer
+    volumes:
+      - ./ftp:/home/vsftpd/nybsys
